@@ -82,7 +82,7 @@ export default function HomePage() {
               <figure className="mx-auto max-w-[280px] border border-border bg-bg-elevated p-2.5 lg:max-w-none">
                 <div className="relative aspect-[7/8] w-full overflow-hidden bg-bg-subtle">
                   <Image
-                    src={profile.portrait}
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${profile.portrait}`}
                     alt={`${profile.name} — ${profile.role}`}
                     fill
                     priority

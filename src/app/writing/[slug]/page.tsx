@@ -4,6 +4,8 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { portfolioData, type ResearchNote } from "@/data/portfolio";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return portfolioData.researchNotes.map((note) => ({
     slug: note.slug,

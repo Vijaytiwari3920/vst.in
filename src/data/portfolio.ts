@@ -56,7 +56,7 @@ export const portfolioData = {
       "Investigating blockchain consensus protocols, architecture, and decentralized security.",
     bio: "I am a Research Scholar working in Blockchain technology with a focus on different types of blockchain consensus protocols, architecture, and security. I explore how consensus mechanisms achieve safety, liveness, and fault tolerance alongside EVM internals and smart contract security. Beyond research, I serve as the Secretary of the Blockchain Club (BlB) at IIT Bhilai, organizing events, leading initiatives, and building a community around Web3 and decentralized technologies.",
     availability: "Ph.D. Research Scholar · IIT Bhilai",
-    portrait: "/images/vijay-portrait.jpeg",
+    portrait: "/images/vijay-portrait.jpg",
     emails: [
       { label: "Academic · IIT Bhilai", address: "vijayst@iitbhilai.ac.in" },
       { label: "Personal", address: "vst3920@gmail.com" },

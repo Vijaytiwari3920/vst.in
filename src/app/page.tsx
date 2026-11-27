@@ -291,14 +291,9 @@ export default function HomePage() {
                     key={cert.title}
                     className="border border-border bg-bg-elevated p-5"
                   >
-                    <div className="flex items-baseline justify-between gap-3">
-                      <h3 className="text-sm font-medium text-fg">
-                        {cert.title}
-                      </h3>
-                      <span className="shrink-0 font-mono text-xs text-accent">
-                        {cert.year}
-                      </span>
-                    </div>
+                    <h3 className="text-sm font-medium text-fg">
+                      {cert.title}
+                    </h3>
                     <p className="mt-1.5 text-xs leading-relaxed text-fg-muted">
                       {cert.detail}
                     </p>

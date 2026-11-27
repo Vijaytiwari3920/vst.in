@@ -22,7 +22,6 @@ export interface EducationItem {
 
 export interface CertificationItem {
   title: string;
-  year: string;
   detail: string;
 }
 
@@ -234,18 +233,15 @@ export const portfolioData = {
 
   certifications: [
     {
-      title: "GATE 2026 — Computer Science & Engineering (CSE)",
-      year: "2026",
+      title: "GATE — Computer Science & Engineering (CSE)",
       detail: "Graduate Aptitude Test in Engineering qualified.",
     },
     {
-      title: "UGC NET 2026",
-      year: "2026",
+      title: "UGC NET",
       detail: "National Eligibility Test qualified.",
     },
     {
-      title: "CG SET 2024 — State Rank 12",
-      year: "2024",
+      title: "CG SET — State Rank 12",
       detail: "Chhattisgarh State Eligibility Test (Computer Science).",
     },
   ] satisfies CertificationItem[],

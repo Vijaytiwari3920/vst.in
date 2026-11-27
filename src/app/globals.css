@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #faf9f6;
+  --bg-elevated: #ffffff;
+  --bg-subtle: #f2f0eb;
+  --fg: #141413;
+  --fg-muted: #57534e;
+  --fg-faint: #8c857e;
+  --border: #e5e2dc;
+  --border-strong: #d1ccc2;
+  --accent: #8b1e2f;
+  --accent-soft: #fdf2f4;
+  --critical: #b91c1c;
+  --critical-soft: #fef2f2;
+  --high: #b45309;
+  --high-soft: #fffbeb;
+}
+
+.dark {
+  --bg: #0c0c0d;
+  --bg-elevated: #131316;
+  --bg-subtle: #1b1b1f;
+  --fg: #f2f1ed;
+  --fg-muted: #a19e98;
+  --fg-faint: #6c6963;
+  --border: #242429;
+  --border-strong: #36363d;
+  --accent: #34d399;
+  --accent-soft: rgba(52, 211, 153, 0.12);
+  --critical: #f87171;
+  --critical-soft: rgba(248, 113, 113, 0.12);
+  --high: #fbbf24;
+  --high-soft: rgba(251, 191, 36, 0.12);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-subtle: var(--bg-subtle);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-faint: var(--fg-faint);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-critical: var(--critical);
+  --color-critical-soft: var(--critical-soft);
+  --color-high: var(--high);
+  --color-high-soft: var(--high-soft);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--accent);
+}

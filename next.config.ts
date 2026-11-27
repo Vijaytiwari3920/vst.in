@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
-const isGithubPages = process.env.GITHUB_PAGES === "true";
-const repoBasePath = "/Portfolio";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -9,14 +8,14 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  ...(isGithubPages
+  ...(basePath
     ? {
-        basePath: repoBasePath,
-        assetPrefix: repoBasePath,
+        basePath,
+        assetPrefix: basePath,
       }
     : {}),
   env: {
-    NEXT_PUBLIC_BASE_PATH: isGithubPages ? repoBasePath : "",
+    NEXT_PUBLIC_BASE_PATH: basePath,
   },
   turbopack: {
     rules: {
